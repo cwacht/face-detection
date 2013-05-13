@@ -138,13 +138,13 @@ var App = {
 		}
 		
 		for (i = App.comp.length; i--; ) {
-			ctx.drawImage(App.glasses, (App.comp[i].x - w / 2) * m, (App.comp[i].y - w / 2) * (m/4), (App.comp[i].width + w) * m, (App.comp[i].height + w) * m/4);
+			ctx.drawImage(App.glasses, (App.comp[i].x - w / 2) * m, (App.comp[i].y + w*1.5) * m, (App.comp[i].width + w) * m, (App.comp[i].height + w) * m/4);
 		}
 	}
 };
 
 App.glasses = new Image();
-App.glasses.src = 'http://i.imm.io/15Nvh.png';
+App.glasses.src = 'http://i.imm.io/15NVk.png';
 
 App.init = function() {
 	App.video = document.createElement('video');
