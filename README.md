@@ -1,9 +1,7 @@
-# Face Detection in JavaScript with getUserMedia
+# See how you would look with Google Glass!
 
-Adapted to work with the getUserMedia API using code from [github.com/wesbos/HTML5-Face-Detection](https://github.com/wesbos/HTML5-Face-Detection)
+Using you webcam, see your face in realtime with Google Glass.
 
-[Try out the demo](http://neave.github.com/face-detection/) using Google Chrome with the "MediaStream" flag enabled in about:flags
+[Go ahead, do it.](http://cwacht.github.com/face-detection/) 
 
-Note that this demo only works online (or localhost) due to security restrictions. It won't work on a local file:/// system!
-
-**Also recommended is [headtrackr](https://github.com/auduno/headtrackr) which is a more sophisticated face- and head-tracking JavaScript library.**
+Based on Paul Neave's [HTML5 Face-Detection](http://neave.github.io/face-detection/)
