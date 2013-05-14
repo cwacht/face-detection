@@ -1,8 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
-<!-- Adapted to work with the getUserMedia API using code from http://wesbos.com/html5-video-face-detection-canvas-javascript/ -->
-<!-- This comment was added so there would be a change to push so the gh-pages branch would publish -->
-	<head>
+<!--  Adapted to work with the getUserMedia API using code from http://wesbos.com/html5-video-face-detection-canvas-javascript/ -->
+    <head>
 		<meta charset="utf-8">
 		<title>HTML5 Face Detection - JavaScript getUserMedia API and Groucho Marx glasses!</title>
 		<style>
@@ -32,11 +31,49 @@ body {
 	background: black;
 	-webkit-transform: scale(-1, 1);
 }
+
+#github {
+	position: absolute;
+	top: 0;
+	right: 0;
+	border: 0;
+}
+title {
+    display: inline-block;
+    position: fixed;
+    top: 0;
+    font-size: 2em;
+    width: 100%;
+    left: 0;
+    padding: 10px 0;
+    background: rgba(0, 0, 0, 0.39);
+    color: #51B9FF;
+    font-family: "Courier New", Courier, monospace;
+}
+#credit{
+    position: fixed;
+    bottom: 0;
+    margin: auto;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.41);
+    padding: 5px 0;
+    color: #DBDBDB;
+}
+#credit a {
+    color: #4DB8FF;
+}
 		</style>
 	</head>
 	<body>
 		<p id="info">Please allow access to your camera!</p>
 		<canvas id="output"></canvas>
+        <title>How do You Look With Google Glass?</title>
+		<span id="credit">
+            It's on <a href="https://github.com/cwacht/face-detection">GitHub</a>!
+            Based on Paul Neave's <a href="http://neave.github.io/face-detection/">HTML5 Face-Detection</a>.
+        </span>
 		<script src="ccv.js"></script>
 		<script src="face.js"></script>
 		<script>
@@ -131,13 +168,13 @@ var App = {
 		}
 		
 		for (i = App.comp.length; i--; ) {
-			ctx.drawImage(App.glasses, (App.comp[i].x - w / 2) * m, (App.comp[i].y - w / 2) * m, (App.comp[i].width + w) * m, (App.comp[i].height + w) * m);
+			ctx.drawImage(App.glasses, (App.comp[i].x - w / 2) * m, (App.comp[i].y + w*1.5) * m, (App.comp[i].width + w) * m, (App.comp[i].height + w) * m/4);
 		}
 	}
 };
 
 App.glasses = new Image();
-App.glasses.src = 'glasses.png';
+App.glasses.src = 'http://i.imm.io/15NVk.png';
 
 App.init = function() {
 	App.video = document.createElement('video');
