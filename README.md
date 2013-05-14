@@ -4,7 +4,7 @@ Everyone's been arguing over whether or not Google Glass makes you look like a g
 
 Ready to know for sure? Click the link below to see yourself in realtime wearing Google Glass.
 
-[Glass My Face!](http://cwacht.github.com/face-detection/) 
+[Glass My Face!](http://cwacht.github.com/glass-my-face) 
 
 
 Based on Paul Neave's [HTML5 Face-Detection](http://neave.github.io/face-detection/)
